@@ -17,7 +17,10 @@ public class notesDaoService {
 	    listNotes.add(new notes(2, "lorepum lorepum ajsa", "lorepum lorepum ajsa", "lorepum lorepum ajsa", "lorepum lorepum ajsa"));
 	    listNotes.add(new notes(3, "lorepum lorepum ajsa", "lorepum lorepum ajsa", "lorepum lorepum ajsa", "lorepum lorepum ajsa"));
 	    listNotes.add(new notes(4, "lorepum lorepum ajsa", "lorepum lorepum ajsa", "lorepum lorepum ajsa", "lorepum lorepum ajsa"));
- }
+		listNotes.add(new notes(5, "lorepum lorepum ajsa", "lorepum lorepum ajsa", "lorepum lorepum ajsa", "lorepum lorepum ajsa"));
+		listNotes.add(new notes(6, "lorepum lorepum ajsa", "lorepum lorepum ajsa", "lorepum lorepum ajsa", "lorepum lorepum ajsa"));
+
+	}
 	
 	public List<notes> findAll(){
 	    return listNotes;
