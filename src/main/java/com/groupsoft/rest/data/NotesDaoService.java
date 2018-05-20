@@ -1,6 +1,7 @@
 package com.groupsoft.rest.data;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 import org.springframework.stereotype.Component;
@@ -8,7 +9,7 @@ import org.springframework.stereotype.Component;
 import com.groupsoft.rest.models.notes;
 
 @Component
-public class notesDaoService {
+public class NotesDaoService {
 
 	static List<notes> listNotes = new ArrayList<notes>();
 	
@@ -40,6 +41,20 @@ public class notesDaoService {
 		}
 		return null;
 	}
-	
-	
+
+	public notes deleteById(int id) {
+		Iterator<notes> iterator = listNotes.iterator();
+		while (iterator.hasNext()){
+			notes note = iterator.next();
+			if(note.get_Id() == id){
+				iterator.remove();
+				return note;
+			}
+		}
+
+		return null;
+	}
+
+
+
 }

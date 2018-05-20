@@ -1,13 +1,13 @@
-package com.groupsoft.rest.controllers;
+package com.groupsoft.rest.exceptions;
 
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;
 
 @ResponseStatus(HttpStatus.NOT_FOUND)
-public class noteNotFoundException extends RuntimeException {
+public class NoteNotFoundException extends RuntimeException {
 
-	public noteNotFoundException(String message) {
+	public NoteNotFoundException(String message) {
 		super(message);
 	}
 }

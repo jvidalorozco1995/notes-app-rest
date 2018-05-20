@@ -1,5 +1,8 @@
 package com.groupsoft.rest.models;
 
+import javax.validation.constraints.Min;
+import javax.validation.constraints.Size;
+
 public class notes {
 
 	public notes() {
@@ -45,8 +48,11 @@ public class notes {
 	public void set_Id(int _Id) {
 		this._Id = _Id;
 	}
+
+
 	private String descripcion;
 	private String nota;
+	@Size(min =2, message = "el autor debe tener dos caracteres")
 	private String autor;
 	private String fecha;
 	private int _Id;
